@@ -1,13 +1,10 @@
 public class Solution {
     public int NumJewelsInStones(string jewels, string stones) {
         int total = 0;
-        foreach (char letter in jewels)
+        foreach (char letter in stones)
         {
-            for (int i = 0; i < stones.Length; i++)
-            {
-                if (letter == stones[i])
-                total++;
-            }
+            if (jewels.Contains(letter))
+            total++;
         }
         return total;
     }
