@@ -5,16 +5,15 @@ public class Solution {
             return k;
         else
         {
-            int j = 0;
             for (int i = 1; i < nums.Length; i++)
             {
-                if (nums[j] != nums[i])
+                if (nums[k] != nums[i])
                 {
-                    j++;
-                    nums[j] = nums[i];
+                    k++;
+                    nums[k] = nums[i];
                 }
             }
-            return j + 1;
+            return k + 1 ;
         }
     }
 }
